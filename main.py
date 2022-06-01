@@ -1,6 +1,5 @@
 from src.word import Word
 import enchant
-from nltk.corpus import words
 import itertools
 wordle = Word()
 wordle.grey = input("Input grey letters, or press enter to skip")
