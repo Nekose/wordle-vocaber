@@ -15,10 +15,11 @@ class Word(object):
         print([(str(x)) for x in self.letterlist])
         return f"Banned letters = {self.grey}"
 
+
 class Letter(object):
     def __init__(self,position) -> None:
         super().__init__()
         self.position = position
-        self.letterlist = [x for x in string.ascii_lowercase]
+        self.letterlist = [x for x in 'etaoinsrhdlucmfywgpbvkxqjz']
     def __str__(self):
         return f"Letter in position {self.position}. Available letters = {self.letterlist}\n"
